@@ -31,15 +31,15 @@ def main():
         currentBase = dexBaseBalance + cexBaseBalance
         currentQuote = dexQuoteBalance + cexQuoteBalance
         timeNow = time.asctime()
-        print(f'当前时间：{timeNow}\n',f'持币总量：{currentBase}\n',f'美元总量：{currentQuote}')
-        print(f'买价差：{cexBuyProfit},卖价差：{cexSellProfit}')
+        print(f'Time Now：{timeNow}\n',f'Total Coins：{currentBase}\n',f'Total USDT：{currentQuote}')
+        print(f'Variance in Purchase：{cexBuyProfit}, Variance in Selling：{cexSellProfit}')
 
-        if cexBuyProfit > config.buyProfit  and buyOrderAmount > config.minOrderAmount:#dex卖，cex买
+        if cexBuyProfit > config.buyProfit  and buyOrderAmount > config.minOrderAmount:#sell in dex，purchase in cex
             api.sellCoins(amountIn=buyOrderAmount)
             api.buy_coins_limit(price=cexBuyPrice,amount=buyOrderAmount)
             time.sleep(10)
             
-        if cexSellProfit > config.sellProfit and sellOrderAmount > config.minOrderAmount:#dex买，cex卖
+        if cexSellProfit > config.sellProfit and sellOrderAmount > config.minOrderAmount:#sell in cex，purchase in dex
             api.buyCoins(amountOut=sellOrderAmount)
             api.sell_coins_limit(price=cexSellPrice,amount=sellOrderAmount)
             time.sleep(10)
