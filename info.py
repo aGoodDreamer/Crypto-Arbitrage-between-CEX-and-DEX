@@ -1,7 +1,7 @@
-#cexApiKey = 'xa2b53ggfc-232a6a6a-7db0e9f5-811e2'
-#cexApiSecret = 'a7013bea-4301228f-4e420e40-69406'
-cexApiKey = '581e2259-32d5f8e7-3568c7d5-bgbfh5tv3f'
-cexApiSecret = 'fbf37c71-ec7f106d-2b01103b-084da'
+#cexApiKey = ' '
+#cexApiSecret = ' '
+cexApiKey = ' '
+cexApiSecret = ' '
 
 account = ''# write down your own account of CEX here
 private_key = ''# obtain from CEX api
