@@ -8,3 +8,6 @@ ccxt | API of CEX| ![ccxt](https://github.com/ccxt.png?size=40)
 web3.py| Connect with DEX| ![web3](https://avatars.githubusercontent.com/u/6250754?s=48&v=4)
 redis| Control Database Redis| ![redis](https://github.com/redis.png?size=40)
 ------
+
+
+**Program v2.0** is based on websocket method to fetch data from cex, which can reduce the delay of the process of pulling.
