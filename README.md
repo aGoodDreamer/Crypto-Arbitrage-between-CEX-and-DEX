@@ -1,5 +1,8 @@
-# Crypto-Arbitrage-between-CEX-and-DEX
-This project was used for crypto arbitrage between CEX and DEX. All the codes in the project is based on **Python**.  Main modules in Python: redis, web3, ccxt.  In the project, we use **Redis** as the database, since all the data will be store in the memory, making the process of storing and reading would be quicker, which is necessary for a arbitrage programme.
+# Crypto Arbitrage between CEX and DEX
+
+This project focuses on crypto arbitrage between centralized exchanges (CEX) and decentralized exchanges (DEX). The entire codebase is implemented in **Python** and utilizes several key modules: **Redis**, **Web3**, and **CCXT**.
+
+In this project, **Redis** serves as the database. By storing all data in memory, Redis significantly speeds up the processes of data storage and retrieval, which is crucial for an effective arbitrage program. This setup enhances performance and responsiveness, enabling timely trading decisions.
 
 ## Main modules used in python
 |Modules | Function|Figure|
@@ -9,5 +12,4 @@ web3.py| Connect with DEX| ![web3](https://avatars.githubusercontent.com/u/62507
 redis| Control Database Redis| ![redis](https://github.com/redis.png?size=40)
 ------
 
-
-**Program v2.0** is based on websocket method to fetch data from cex, which can reduce the delay of the process of pulling.
+**Program v2.0** leverages the WebSocket method to fetch data from centralized exchanges (CEX). This approach minimizes latency, significantly speeding up the data retrieval process. By using WebSockets, the program can receive real-time updates, ensuring more timely and efficient trading decisions.
